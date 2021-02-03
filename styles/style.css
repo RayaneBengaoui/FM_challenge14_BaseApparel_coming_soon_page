@@ -8,4 +8,25 @@
 html {
   font-family: "Josefin Sans", sans-serif;
 }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  width: 55%;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+aside {
+  width: 45%;
+  height: 100vh;
+  background-image: url("../images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */
