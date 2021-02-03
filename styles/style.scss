@@ -20,14 +20,10 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 
-  .description {
-    max-width: 35rem;
-  }
-
   h1 {
     font-family: inherit;
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 4.2rem;
 
     letter-spacing: 1rem;
     line-height: 1.1;
@@ -37,6 +33,54 @@ section {
       font-weight: 300;
     }
   }
+
+  p {
+    font-size: $fontSize;
+    font-family: inherit;
+    color: $desaturatedRed;
+    line-height: 1.5;
+  }
+
+  .email_input {
+    position: relative;
+  }
+
+  form input,
+  button {
+    outline: none;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 5rem;
+  }
+
+  form input[type="email"] {
+    background: transparent;
+    border: 1px solid $desaturatedRed;
+    width: 25rem;
+    font-family: inherit;
+    font-size: 1.1rem;
+
+    &::placeholder {
+      color: $desaturatedRed;
+      opacity: 0.5;
+    }
+  }
+
+  button[type="submit"] {
+    position: absolute;
+    top: -0.1rem;
+    right: 1rem;
+    width: 6rem;
+    background: $secondGradient;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    box-shadow: -3px 2px 6px $desaturatedRed;
+  }
+}
+
+section > * {
+  margin: auto;
+  max-width: 28rem;
 }
 
 aside {

@@ -22,14 +22,10 @@ section {
   background-size: cover;
 }
 
-section .description {
-  max-width: 35rem;
-}
-
 section h1 {
   font-family: inherit;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4.2rem;
   letter-spacing: 1rem;
   line-height: 1.1;
 }
@@ -37,6 +33,70 @@ section h1 {
 section h1 span {
   color: #ce9797;
   font-weight: 300;
+}
+
+section p {
+  font-size: 16px;
+  font-family: inherit;
+  color: #ce9797;
+  line-height: 1.5;
+}
+
+section .email_input {
+  position: relative;
+}
+
+section form input,
+section button {
+  outline: none;
+  border: none;
+  padding: 1.2rem 2rem;
+  border-radius: 5rem;
+}
+
+section form input[type="email"] {
+  background: transparent;
+  border: 1px solid #ce9797;
+  width: 25rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+section form input[type="email"]::-webkit-input-placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+section form input[type="email"]:-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+section form input[type="email"]::-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+section form input[type="email"]::placeholder {
+  color: #ce9797;
+  opacity: 0.5;
+}
+
+section button[type="submit"] {
+  position: absolute;
+  top: -0.1rem;
+  right: 1rem;
+  width: 6rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: -3px 2px 6px #ce9797;
+          box-shadow: -3px 2px 6px #ce9797;
+}
+
+section > * {
+  margin: auto;
+  max-width: 28rem;
 }
 
 aside {
