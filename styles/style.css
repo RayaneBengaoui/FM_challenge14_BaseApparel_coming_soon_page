@@ -22,6 +22,23 @@ section {
   background-size: cover;
 }
 
+section .description {
+  max-width: 35rem;
+}
+
+section h1 {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  line-height: 1.1;
+}
+
+section h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
 aside {
   width: 45%;
   height: 100vh;

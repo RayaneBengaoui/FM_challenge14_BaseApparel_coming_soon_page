@@ -19,6 +19,24 @@ section {
   background-image: url("../images/bg-pattern-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  .description {
+    max-width: 35rem;
+  }
+
+  h1 {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 5rem;
+
+    letter-spacing: 1rem;
+    line-height: 1.1;
+
+    span {
+      color: $desaturatedRed;
+      font-weight: 300;
+    }
+  }
 }
 
 aside {
