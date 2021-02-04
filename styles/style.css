@@ -214,6 +214,19 @@ section button[type="submit"] {
   cursor: pointer;
   -webkit-box-shadow: -3px 2px 6px #ce9797;
           box-shadow: -3px 2px 6px #ce9797;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section button[type="submit"]:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c 150%);
+}
+
+section button[type="submit"]:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media screen and (max-width: 1000px) {
