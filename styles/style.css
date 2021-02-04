@@ -113,6 +113,32 @@ section .email_input {
   position: relative;
 }
 
+section .email_input .error {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  section .email_input .error {
+    top: 32%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section .email_input .error {
+    top: 26%;
+  }
+}
+
+section .email_input .inactive {
+  display: none;
+}
+
+section .email_input .active {
+  display: block;
+}
+
 @media screen and (max-width: 1000px) {
   section .email_input {
     position: absolute;
@@ -141,7 +167,7 @@ section button {
   }
 }
 
-section form input[type="email"] {
+section input[type="email"] {
   background: transparent;
   border: 1px solid #ce9797;
   width: 25rem;
@@ -150,29 +176,33 @@ section form input[type="email"] {
 }
 
 @media screen and (max-width: 1000px) {
-  section form input[type="email"] {
+  section input[type="email"] {
     width: 25rem;
   }
 }
 
-section form input[type="email"]::-webkit-input-placeholder {
+section input[type="email"]::-webkit-input-placeholder {
   color: #ce9797;
   opacity: 0.5;
 }
 
-section form input[type="email"]:-ms-input-placeholder {
+section input[type="email"]:-ms-input-placeholder {
   color: #ce9797;
   opacity: 0.5;
 }
 
-section form input[type="email"]::-ms-input-placeholder {
+section input[type="email"]::-ms-input-placeholder {
   color: #ce9797;
   opacity: 0.5;
 }
 
-section form input[type="email"]::placeholder {
+section input[type="email"]::placeholder {
   color: #ce9797;
   opacity: 0.5;
+}
+
+section form .inputError {
+  border: 1px solid red;
 }
 
 section button[type="submit"] {

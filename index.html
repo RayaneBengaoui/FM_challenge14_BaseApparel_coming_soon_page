@@ -29,9 +29,16 @@
         </p>
       </div>
       <div class="email_input">
-        <form action="#">
-          <input placeholder=" Email Address" type="email" required />
-          <!-- <input type="submit" value="" /> -->
+        <form action="#" onchange="event.preventDefault();">
+          <input
+            placeholder=" Email Address"
+            type="email"
+            id="emailInput"
+            required
+          />
+          <div class="error inactive">
+            <img src="./images/icon-error.svg" alt="error" />
+          </div>
           <button type="submit">
             <img src="./images/icon-arrow.svg" alt="submit" />
           </button>
@@ -39,5 +46,6 @@
       </div>
     </section>
     <aside></aside>
+    <script src="./app.js"></script>
   </body>
 </html>

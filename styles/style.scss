@@ -90,6 +90,26 @@ section {
   .email_input {
     position: relative;
 
+    .error {
+      position: absolute;
+      top: 30%;
+      right: 30%;
+      @media screen and (max-width: 1000px) {
+        top: 32%;
+      }
+      @media screen and (max-width: 500px) {
+        top: 26%;
+      }
+    }
+
+    .inactive {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
     @media screen and (max-width: 1000px) {
       position: absolute;
       top: 80vh;
@@ -112,7 +132,7 @@ section {
     }
   }
 
-  form input[type="email"] {
+  input[type="email"] {
     background: transparent;
     border: 1px solid $desaturatedRed;
     width: 25rem;
@@ -127,6 +147,10 @@ section {
       color: $desaturatedRed;
       opacity: 0.5;
     }
+  }
+
+  form .inputError {
+    border: 1px solid red;
   }
 
   button[type="submit"] {
