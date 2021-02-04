@@ -225,6 +225,7 @@ aside {
     top: 10vh;
     height: 30vh;
     width: 100%;
+    background-image: url("../images/hero-mobile.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */
