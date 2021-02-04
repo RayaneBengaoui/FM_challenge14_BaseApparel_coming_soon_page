@@ -8,10 +8,21 @@
 
 html {
   font-family: "Josefin Sans", sans-serif;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 85%;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 70%;
+  }
 }
 
 body {
+  width: 100%;
   display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 section {
@@ -23,6 +34,35 @@ section {
   #logo {
     margin-top: 5rem;
     margin-bottom: 8rem;
+
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+      padding-left: 3rem;
+
+      min-height: 10vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .description {
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+      top: 40vh;
+      height: 40vh;
+      max-width: 60rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 3rem;
+    }
   }
 
   h1 {
@@ -49,6 +89,15 @@ section {
 
   .email_input {
     position: relative;
+
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+      top: 80vh;
+      height: 20vh;
+      max-width: 28rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   form input,
@@ -57,6 +106,10 @@ section {
     border: none;
     padding: 1.2rem 2rem;
     border-radius: 5rem;
+    @media screen and (max-width: 1000px) {
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+    }
   }
 
   form input[type="email"] {
@@ -66,6 +119,10 @@ section {
     font-family: inherit;
     font-size: 1.1rem;
 
+    @media screen and (max-width: 1000px) {
+      width: 25rem;
+    }
+
     &::placeholder {
       color: $desaturatedRed;
       opacity: 0.5;
@@ -74,19 +131,30 @@ section {
 
   button[type="submit"] {
     position: absolute;
-
     right: 1rem;
     width: 6rem;
     background: $secondGradient;
     padding: 0.9rem 1rem;
     cursor: pointer;
     box-shadow: -3px 2px 6px $desaturatedRed;
+    @media screen and (max-width: 1000px) {
+      padding: 1.1rem 1rem;
+      right: 0rem;
+    }
+    @media screen and (max-width: 500px) {
+      right: 0rem;
+      padding: 0.9rem 1rem;
+    }
   }
 }
 
 section > * {
   margin: auto;
   max-width: 28rem;
+
+  @media screen and (max-width: 1000px) {
+    max-width: 100%;
+  }
 }
 
 aside {
@@ -95,4 +163,11 @@ aside {
   background-image: url("../images/hero-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: 1000px) {
+    position: absolute;
+    top: 10vh;
+    height: 30vh;
+    width: 100%;
+  }
 }
